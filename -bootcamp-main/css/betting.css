@@ -1,0 +1,533 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+	background-color: #212529;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 1400px;
+    height: 750px;
+    background-image: url("/img/wood.png");
+    text-align: center;
+    position: absolute;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+
+.lotternumber{
+    width: 280px;
+    height: 50px;
+    top: 7%;
+    left: 16.5%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: .375rem .75rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #212529;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.status{
+    width: 60px;
+    height: 50px;
+    top: 7%;
+    left: 31%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: #212529;
+    text-align: center;
+}
+
+.search_button{
+    width: 50px;
+    height: 50px;
+    top: 7%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/search.png");
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.paging_index{
+    width: 80px;
+    height: 80px;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/money0.png");
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.left_index{
+    width: 80px;
+    height: 50px;
+    top: 7%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/left0.png");
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.right_index{
+    width: 80px;
+    height: 50px;
+    top: 7%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/righr0.png");
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.mylottery{
+    width: 70px;
+    height: 60px;
+    top: 7%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/search.jpg");
+    border: none;
+    cursor: pointer;
+}
+
+.money{
+    width: 300px;
+    height: 35px;
+    top: 10%;
+    right: -4%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.helloname{
+    width: 300px;
+    height: 35px;
+    top: 5%;
+    right: -4%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.box{
+    width: 1300px;
+    height: 600px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/futureboard.png");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.lottery00{
+    width: 220px;
+    height: 110px;
+    top: 11%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery01{
+    width: 220px;
+    height: 110px;
+    top: 11%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery02{
+    width: 220px;
+    height: 110px;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery03{
+    width: 220px;
+    height: 110px;
+    top: 11%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery04{
+    width: 220px;
+    height: 110px;
+    top: 11%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery05{
+    width: 220px;
+    height: 110px;
+    top: 30.5%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery06{
+    width: 220px;
+    height: 110px;
+    top: 30.5%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery07{
+    width: 220px;
+    height: 110px;
+    top: 30.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery08{
+    width: 220px;
+    height: 110px;
+    top: 30.5%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery09{
+    width: 220px;
+    height: 110px;
+    top: 30.5%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery10{
+    width: 220px;
+    height: 110px;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery11{
+    width: 220px;
+    height: 110px;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery12{
+    width: 220px;
+    height: 110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery13{
+    width: 220px;
+    height: 110px;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery14{
+    width: 220px;
+    height: 110px;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery15{
+    width: 220px;
+    height: 110px;
+    top: 69.5%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery16{
+    width: 220px;
+    height: 110px;
+    top: 69.5%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery17{
+    width: 220px;
+    height: 110px;
+    top: 69.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery18{
+    width: 220px;
+    height: 110px;
+    top: 69.5%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery19{
+    width: 220px;
+    height: 110px;
+    top: 69.5%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery20{
+    width: 220px;
+    height: 110px;
+    top: 89%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery21{
+    width: 220px;
+    height: 110px;
+    top: 89%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery22{
+    width: 220px;
+    height: 110px;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery23{
+    width: 220px;
+    height: 110px;
+    top: 89%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.lottery24{
+    width: 220px;
+    height: 110px;
+    top: 89.5%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-image: url("/img/lottory.png");
+    cursor: pointer;
+    border: none;
+}
+.text{
+    color: rgb(0, 0, 0);
+    top: 4%;
+    position: absolute;
+    right: 25%;
+}
+
+.show{
+    color: rgb(0, 0, 0);
+    top: 10%;
+    position: absolute;
+    right: 50%;
+}
+
+.confirmpopup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.popup{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.close{
+    position: absolute;
+    cursor: pointer;
+    background-color: #ff0000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    display: block;
+    right: 13%;
+    bottom: 10%;
+}
+.buy{
+    position: absolute;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    display: block;
+    left: 13%;
+    bottom: 10%;
+}
+.paging{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.popuppaging{
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.closeing{
+    position: absolute;
+    top: 0.5%;
+    right: 3%;
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}

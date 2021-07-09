@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BootCampCS</title>
+	<link rel="stylesheet" type="text/css" href="css/betting.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <div class="container">
+        <form id="search-form">
+            <input type="text" value="" id="lottery-search" placeholder="Press search" name="lotternumber" class="lotternumber"></input>
+        </form>
+        <button id="search-button" class="search_button" onclick="searchLottery()">
+        </button>
+        <button id="left-btn" class="left_index" onclick="LeftPage()"></button>
+        <button id="paging" class="paging_index" onclick="listLottery()"></button>
+        <button id="right-btn" class="right_index" onclick="RightPage()"></button>
+        <div id="charID"></div>
+        <div class="helloname" id="name"></div>
+        <div class="money" id="money"></div>
+        <div class="box">
+            <button id="buylottery00" class="lottery00">
+                <h2 class="text" id="superText0">###</h2>
+            </button>
+            <button id="buylottery01" class="lottery01">
+                <h2 class="text" id="superText1">###</h2>
+            </button>
+            <button id="buylottery02" class="lottery02">
+                <h2 class="text" id="superText2">###</h2>
+            </button>
+            <button id="buylottery03" class="lottery03">
+                <h2 class="text" id="superText3">###</h2>
+            </button>
+            <button id="buylottery04" class="lottery04">
+                <h2 class="text" id="superText4">###</h2>
+            </button>
+            <button id="buylottery05" class="lottery05">
+                <h2 class="text" id="superText5">###</h2>
+            </button>
+            <button id="buylottery06" class="lottery06">
+                <h2 class="text" id="superText6">###</h2>
+            </button>
+            <button id="buylottery07" class="lottery07">
+                <h2 class="text" id="superText7">###</h2>
+            </button>
+            <button id="buylottery08" class="lottery08">
+                <h2 class="text" id="superText8">###</h2>
+            </button>
+            <button id="buylottery09" class="lottery09">
+                <h2 class="text" id="superText9">###</h2>
+            </button>
+            <button id="buylottery10" class="lottery10">
+                <h2 class="text" id="superText10">###</h2>
+            </button>
+            <button id="buylottery11" class="lottery11">
+                <h2 class="text" id="superText11">###</h2>
+            </button>
+            <button id="buylottery12" class="lottery12">
+                <h2 class="text" id="superText12">###</h2>
+            </button>
+            <button id="buylottery13" class="lottery13">
+                <h2 class="text" id="superText13">###</h2>
+            </button>
+            <button id="buylottery14" class="lottery14">
+                <h2 class="text" id="superText14">###</h2>
+            </button>
+            <button id="buylottery15" class="lottery15">
+                <h2 class="text" id="superText15">###</h2>
+            </button>
+            <button id="buylottery16" class="lottery16">
+                <h2 class="text" id="superText16">###</h2>
+            </button>
+            <button id="buylottery17" class="lottery17">
+                <h2 class="text" id="superText17">###</h2>
+            </button>
+            <button id="buylottery18" class="lottery18">
+                <h2 class="text" id="superText18">###</h2>
+            </button>
+            <button id="buylottery19" class="lottery19">
+                <h2 class="text" id="superText19">###</h2>
+            </button>
+            <button id="buylottery20" class="lottery20">
+                <h2 class="text" id="superText20">###</h2>
+            </button>
+            <button id="buylottery21" class="lottery21">
+                <h2 class="text" id="superText21">###</h2>
+            </button>
+            <button id="buylottery22" class="lottery22">
+                <h2 class="text" id="superText22">###</h2>
+            </button>
+            <button id="buylottery23" class="lottery23">
+                <h2 class="text" id="superText23">###</h2>
+            </button>
+            <button id="buylottery24" class="lottery24">
+                <h2 class="text" id="superText24">###</h2>
+            </button>
+        </div>
+    </div>
+    <div class="confirmpopup">
+        <div class="popup" id="popup-select">
+            <h2 id="loading-screen">Buy this lottery number?</h2>
+            <img src="/img/coin-794.png">
+            <button class="buy" onclick="this.disabled=true; buyLottery(); this.disabled=false;">YES</button>
+            <button class="close" id="prob-btn" onclick="closeBtn()">NO</button>
+        </div>
+    </div>
+    <div class="paging">
+        <div class="popuppaging">
+            <div class="closeing">X</div>
+                <h1>My lotto</h1>
+                <br><hr><br>
+                <h2 id="show-lotto1"></h2>
+                <h2 id="show-lotto2"></h2>
+                <h2 id="show-lotto3"></h2>
+                <h2 id="show-lotto4"></h2>
+                <h2 id="show-lotto5"></h2>
+                <h2 id="show-lotto6"></h2>
+                <h2 id="show-lotto7"></h2>
+                <h2 id="show-lotto8"></h2>
+                <h2 id="show-lotto9"></h2>
+                <h2 id="show-lotto10"></h2>
+                <h2 id="show-lotto11"></h2>
+                <h2 id="show-lotto12"></h2>
+                <h2 id="show-lotto13"></h2>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/paging.js"></script>
+    <script type="text/javascript" src="js/betting.js"></script>
+</body>
+</html>
